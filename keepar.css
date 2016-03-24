@@ -1,1 +1,35 @@
+html, body {
+    margin:0;
+    width:100%;
+    height:100%;
+}
 
+.video-cont {
+    width:100%;
+    height:calc(100% - 115px);
+    background: #666;
+}
+
+.video-aspect-ratio {
+    position: relative;
+    height:0;
+    padding-top:25px;
+    padding-bottom:calc(56.25% - 25px);
+}
+
+.video-aspect-ratio video {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    max-width:calc((100vh - 115px) * 1.77);
+    max-height: calc(100vh - 115px);
+}
+
+
+.placeholder {
+    width:100%;
+    height:115px;
+    background: #444;
+}

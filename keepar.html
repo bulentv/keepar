@@ -3,8 +3,28 @@
     <title>Keep Video Aspect Ratio challenge without using JS</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" href="keepar.css">
+
+    <script>
+        function aspectRatio() {
+            var video = document.getElementById("vid");
+            var width = video.clientWidth;
+            var height = video.clientHeight;
+
+
+            console.log(width/height);
+        }
+    </script>
 </head>
 <body>
-<video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" autoplay="autoplay" controls="controls"></video>
+<div class="video-cont">
+    <div class="video-aspect-ratio">
+        <video id="vid" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" autoplay="autoplay" controls="controls"></video>
+    </div>
+</div>
+
+<div class="placeholder">
+
+</div>
+
 </body>
 </html>
