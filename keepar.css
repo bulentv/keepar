@@ -4,6 +4,28 @@ html, body {
     height:100%;
 }
 
+.player-container {
+    width: 100%;
+    height: 100%;
+}
+
+.video-bg {
+    background-color: black;
+}
+
+.video-fg {
+    width:100%;
+    height:100%;
+}
+
+.controls-container {
+    background: #994444;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
 .video-cont {
     width:100%;
     height:calc(100% - 115px); /* Subtract the height of the placeholder*/
