@@ -6,30 +6,29 @@ html, body {
 
 .video-cont {
     width:100%;
-    height:calc(100% - 115px);
+    height:calc(100% - 115px); /* Subtract the height of the placeholder*/
     background: #666;
-    overflow: hidden;
+    overflow: hidden; /* Centering causes overflow. Hide the scrollbars for this div */
 }
 
 .video-aspect-ratio {
     position: relative;
-    height:0;
-    padding-top:25px;
-    padding-bottom:calc(56.25% - 25px);
+    height:0; /* The trick is setting some padding for the div. No additional height is required */
+    padding-top:25px; /* For some browsers */
+    padding-bottom:calc(56.25% - 25px); /* 16:9 ratio but need to subtract the additional top padding */
 }
 
 .video-aspect-ratio video {
-    position: absolute;
+    position: absolute; /* Force to render onto it's container */
     top:0;
-    left:0;
-    right: 0;
-    margin: 0 auto;
+    left:0; /* Centering video */
+    right: 0; /*Centering video */
+    margin: 0 auto; /* Centering video */
     width:100%;
     height:100%;
-    max-width:calc((100vh - 115px) * 1.77);
-    max-height: calc(100vh - 115px);
+    max-width:calc((100vh - 115px) * 1.77); /* If the video is overlapping the placeholder, fix it*/
+    max-height: calc(100vh - 115px);/* If the video is overlapping the placeholder, fix it*/
 }
-
 
 .placeholder {
     width:100%;
